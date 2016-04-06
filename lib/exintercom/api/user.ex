@@ -15,12 +15,10 @@ defmodule ExIntercom.User do
     fetch(@endpoint <> "/" <> to_string(id))
   end
 
-  @spec find_by_user_id([user_id: <<>>]) :: %{}
   def find_by_user_id(user_id) do
     fetch(@endpoint <> "?user_id=" <> user_id) 
   end
 
-  @spec find_by_email([email: <<>>]) :: %{}
   def find_by_email(email) do
     fetch(@endpoint <> "?email=" <> email)
   end
