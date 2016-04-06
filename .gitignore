@@ -7,3 +7,5 @@ erl_crash.dump
 /fixture/vcr_cassettes
 /docs
 /doc
+
+*.swp

@@ -27,6 +27,8 @@ defmodule ExIntercom.Base do
   end
 
   defp authenticate do
+    IO.inspect Auth.app_id
+    IO.inspect Auth.app_key
     [
       hackney: [
         basic_auth: {
